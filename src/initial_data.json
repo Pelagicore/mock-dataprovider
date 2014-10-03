@@ -1,0 +1,344 @@
+[
+{
+  "model": "auth.permission",
+  "fields": {
+    "content_type": 1,
+    "codename": "add_logentry",
+    "name": "Can add log entry"
+  },
+  "pk": 1
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "content_type": 1,
+    "codename": "change_logentry",
+    "name": "Can change log entry"
+  },
+  "pk": 2
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "content_type": 1,
+    "codename": "delete_logentry",
+    "name": "Can delete log entry"
+  },
+  "pk": 3
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "content_type": 2,
+    "codename": "add_permission",
+    "name": "Can add permission"
+  },
+  "pk": 4
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "content_type": 2,
+    "codename": "change_permission",
+    "name": "Can change permission"
+  },
+  "pk": 5
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "content_type": 2,
+    "codename": "delete_permission",
+    "name": "Can delete permission"
+  },
+  "pk": 6
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "content_type": 3,
+    "codename": "add_group",
+    "name": "Can add group"
+  },
+  "pk": 7
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "content_type": 3,
+    "codename": "change_group",
+    "name": "Can change group"
+  },
+  "pk": 8
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "content_type": 3,
+    "codename": "delete_group",
+    "name": "Can delete group"
+  },
+  "pk": 9
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "content_type": 4,
+    "codename": "add_user",
+    "name": "Can add user"
+  },
+  "pk": 10
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "content_type": 4,
+    "codename": "change_user",
+    "name": "Can change user"
+  },
+  "pk": 11
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "content_type": 4,
+    "codename": "delete_user",
+    "name": "Can delete user"
+  },
+  "pk": 12
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "content_type": 5,
+    "codename": "add_contenttype",
+    "name": "Can add content type"
+  },
+  "pk": 13
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "content_type": 5,
+    "codename": "change_contenttype",
+    "name": "Can change content type"
+  },
+  "pk": 14
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "content_type": 5,
+    "codename": "delete_contenttype",
+    "name": "Can delete content type"
+  },
+  "pk": 15
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "content_type": 6,
+    "codename": "add_session",
+    "name": "Can add session"
+  },
+  "pk": 16
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "content_type": 6,
+    "codename": "change_session",
+    "name": "Can change session"
+  },
+  "pk": 17
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "content_type": 6,
+    "codename": "delete_session",
+    "name": "Can delete session"
+  },
+  "pk": 18
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "content_type": 7,
+    "codename": "add_track",
+    "name": "Can add track"
+  },
+  "pk": 19
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "content_type": 7,
+    "codename": "change_track",
+    "name": "Can change track"
+  },
+  "pk": 20
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "content_type": 7,
+    "codename": "delete_track",
+    "name": "Can delete track"
+  },
+  "pk": 21
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "content_type": 8,
+    "codename": "add_station",
+    "name": "Can add station"
+  },
+  "pk": 22
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "content_type": 8,
+    "codename": "change_station",
+    "name": "Can change station"
+  },
+  "pk": 23
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "content_type": 8,
+    "codename": "delete_station",
+    "name": "Can delete station"
+  },
+  "pk": 24
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "content_type": 9,
+    "codename": "add_contact",
+    "name": "Can add contact"
+  },
+  "pk": 25
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "content_type": 9,
+    "codename": "change_contact",
+    "name": "Can change contact"
+  },
+  "pk": 26
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "content_type": 9,
+    "codename": "delete_contact",
+    "name": "Can delete contact"
+  },
+  "pk": 27
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "content_type": 10,
+    "codename": "add_movie",
+    "name": "Can add movie"
+  },
+  "pk": 28
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "content_type": 10,
+    "codename": "change_movie",
+    "name": "Can change movie"
+  },
+  "pk": 29
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "content_type": 10,
+    "codename": "delete_movie",
+    "name": "Can delete movie"
+  },
+  "pk": 30
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "content_type": 11,
+    "codename": "add_photo",
+    "name": "Can add photo"
+  },
+  "pk": 31
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "content_type": 11,
+    "codename": "change_photo",
+    "name": "Can change photo"
+  },
+  "pk": 32
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "content_type": 11,
+    "codename": "delete_photo",
+    "name": "Can delete photo"
+  },
+  "pk": 33
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "content_type": 12,
+    "codename": "add_task",
+    "name": "Can add task"
+  },
+  "pk": 34
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "content_type": 12,
+    "codename": "change_task",
+    "name": "Can change task"
+  },
+  "pk": 35
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "content_type": 12,
+    "codename": "delete_task",
+    "name": "Can delete task"
+  },
+  "pk": 36
+},
+{
+  "model": "auth.user",
+  "fields": {
+    "is_active": true,
+    "last_name": "",
+    "username": "admin",
+    "last_login": "2014-09-27T10:29:43.769Z",
+    "user_permissions": [],
+    "is_superuser": true,
+    "date_joined": "2014-09-27T10:29:43.769Z",
+    "first_name": "",
+    "groups": [],
+    "password": "pbkdf2_sha256$12000$vgjteLM5KPYS$hZwaWk6zl11ksOHktCPW58VEjIN36aRwQ6VQ34VbkbU=",
+    "is_staff": true,
+    "email": "admin@mail.org"
+  },
+  "pk": 1
+}
+]

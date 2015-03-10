@@ -6,17 +6,29 @@ A django based web service to provide music, movie, contacts and other data in J
 Install
 -------
 
-For the web server
+If you want to, you can setup a virtual environment for Python. This helps separating the installations made using `pip` from the rest of the system.
+
+    virtualenv venv
+    source venv/bin/activate
+    
+To exit the virtual environment, simply type
+
+    deactivate
+
+The following steps are compulsory regardless if you choose to work in a virtual environment or not.
+
+To install prerequisites web server
 
     pip install django
-    pip install djangorestframework
+    pip install djangorestframework==2.4
     pip install django-filter
     pip install django-grappelli
     pip install django-filebrowser
+    pip install pillow
 
 To enable music/video scanning
 
-    pip install mutagen
+    pip install mutagenx
 
 Run
 ---
@@ -53,5 +65,3 @@ To scan for media use:
 or use the help for manage.py
 
     ./manage.py help
-
-

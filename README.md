@@ -28,7 +28,7 @@ To install prerequisites web server
 
 To enable music/video scanning
 
-    pip install mutagen
+    pip install mutagenx
 
 Run
 ---

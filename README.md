@@ -20,7 +20,7 @@ The following steps are compulsory regardless if you choose to work in a virtual
 To install prerequisites web server
 
     pip install django
-    pip install djangorestframework
+    pip install djangorestframework==2.4
     pip install django-filter
     pip install django-grappelli
     pip install django-filebrowser

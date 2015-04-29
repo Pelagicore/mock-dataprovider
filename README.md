@@ -8,7 +8,9 @@ Install
 
 If you want to, you can setup a virtual environment for Python. This helps separating the installations made using `pip` from the rest of the system.
 
-    virtualenv venv
+Ensure you point the virtual environment to a Python3 instance.
+
+    virtualenv p /usr/local/bin/python3 venv
     source venv/bin/activate
     
 To exit the virtual environment, simply type
@@ -20,7 +22,7 @@ The following steps are compulsory regardless if you choose to work in a virtual
 To install prerequisites web server
 
     pip install django
-    pip install djangorestframework==2.4
+    pip install djangorestframework
     pip install django-filter
     pip install django-grappelli
     pip install django-filebrowser

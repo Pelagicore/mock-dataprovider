@@ -82,12 +82,12 @@ class Command(BaseCommand):
 
     def writeMeta(self, root, title, album, artist, track, cover, name, filename):
         text = open(os.path.join(root, name + '.txt'), 'w')
-        text.write((u'SOURCE: ' + filename + '\n').encode('utf-8'))
-        text.write((u'TITLE: ' + title + '\n').encode('utf-8'))
-        text.write((u'ALBUM: ' + album + '\n').encode('utf-8'))
-        text.write((u'ARTIST: ' + artist + '\n').encode('utf-8'))
-        text.write((u'TRACK: ' + track + '\n').encode('utf-8'))
-        text.write((u'COVER: cover.png' + '\n').encode('utf-8'))
+        text.write(u'SOURCE: {0}\n'.format(filename))
+        text.write(u'TITLE: {0}\n'.format(title))
+        text.write(u'ALBUM: {0}\n'.format(album))
+        text.write(u'ARTIST: {0}\n'.format(artist))
+        text.write(u'TRACK: {0}\n'.format(track))
+        text.write(u'COVER: cover.png\n')
         text.close()
 
     def writeCover(self, root, coverName, data):

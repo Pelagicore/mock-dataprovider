@@ -1,10 +1,8 @@
-Data Provider
-=============
+# Mock Data Provider
 
 A django based web service to provide music, movie, contacts and other data in JSON format.
 
-Install
--------
+## Install
 
 If you want to, you can setup a virtual environment for Python. This helps separating the installations made using `pip` from the rest of the system.
 
@@ -32,8 +30,7 @@ To enable music/video scanning
 
     pip install mutagenx
 
-Run
----
+## Run
 
     cd src/
     ./manage.py syncdb
@@ -48,8 +45,7 @@ The different web-services under
     http://localhost:8000/contacts
     http://localhost:8000/photos
 
-To Scan for Data
-----------------
+## To Scan for Data
 
 The media data must reside in ~/media
 

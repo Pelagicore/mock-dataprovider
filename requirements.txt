@@ -1,0 +1,9 @@
+django
+djangorestframework
+django-grappelli
+django-filter
+django-filebrowser
+pillow
+mutagen
+graphene
+graphene-django

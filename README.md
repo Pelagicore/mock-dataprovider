@@ -19,31 +19,22 @@ The following steps are compulsory regardless if you choose to work in a virtual
 
 To install prerequisites web server
 
-    pip install django
-    pip install djangorestframework
-    pip install django-filter
-    pip install django-grappelli
-    pip install django-filebrowser
-    pip install pillow
-
-To enable music/video scanning
-
-    pip install mutagenx
+    pip install -r requirements.txt
 
 ## Run
 
     cd src/
-    ./manage.py syncdb
+    ./manage.py migrate
     ./manage.py runserver
 
-The server is available under http://localhost:8000
+The server is available under http://localhost:8000/
 
 The different web-services under
 
-    http://localhost:8000/music
-    http://localhost:8000/movies
-    http://localhost:8000/contacts
-    http://localhost:8000/photos
+    http://localhost:8000/api/music/
+    http://localhost:8000/api/movies/
+    http://localhost:8000/api/contacts/
+    http://localhost:8000/api/photos/
 
 ## To Scan for Data
 

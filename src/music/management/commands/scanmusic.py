@@ -4,7 +4,7 @@ from django.core.management.base import BaseCommand
 from music.models import Track
 import os
 
-from mutagenx.id3 import ID3, ID3NoHeaderError
+from mutagen.id3 import ID3, ID3NoHeaderError
 
 albums = set()
 
@@ -24,7 +24,7 @@ class Command(BaseCommand):
         obj = media.get(tag)
         if obj:
             return ''.join(obj)
-        return u''
+        return ''
 
     def scanRoot(self, start):
         start = os.path.abspath(start)
@@ -37,7 +37,7 @@ class Command(BaseCommand):
                 filepath = os.path.join(root, filename)
                 name = filename[0:-4]
                 folderpath = os.path.relpath(root, start)
-                print(u'analyze: {0}'.format(filepath.encode('utf-8')))
+                print('analyze: {0}'.format(filepath.encode('utf-8')))
                 try:
                     audio = ID3(filepath)
                 except ID3NoHeaderError:
@@ -82,12 +82,12 @@ class Command(BaseCommand):
 
     def writeMeta(self, root, title, album, artist, track, cover, name, filename):
         text = open(os.path.join(root, name + '.txt'), 'w')
-        text.write(u'SOURCE: {0}\n'.format(filename))
-        text.write(u'TITLE: {0}\n'.format(title))
-        text.write(u'ALBUM: {0}\n'.format(album))
-        text.write(u'ARTIST: {0}\n'.format(artist))
-        text.write(u'TRACK: {0}\n'.format(track))
-        text.write(u'COVER: cover.png\n')
+        text.write('SOURCE: {0}\n'.format(filename))
+        text.write('TITLE: {0}\n'.format(title))
+        text.write('ALBUM: {0}\n'.format(album))
+        text.write('ARTIST: {0}\n'.format(artist))
+        text.write('TRACK: {0}\n'.format(track))
+        text.write('COVER: cover.png\n')
         text.close()
 
     def writeCover(self, root, coverName, data):

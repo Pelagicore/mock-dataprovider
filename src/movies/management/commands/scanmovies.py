@@ -3,7 +3,7 @@
 from django.core.management.base import BaseCommand
 from movies.models import Movie
 import os
-from mutagenx.mp4 import MP4
+from mutagen.mp4 import MP4
 
 
 class Command(BaseCommand):
@@ -18,10 +18,12 @@ class Command(BaseCommand):
             self.scanFolder(filePath)
 
     def extractTag(self, media, tag):
-        obj = media.get(tag)[0]
+        data = media.get(tag)
+        if not data: return ''
+        obj = data[0]
         if obj:
-            return u''.join(obj)
-        return u''
+            return ''.join(obj)
+        return ''
 
 
     def scanFolder(self, start):
@@ -43,7 +45,7 @@ class Command(BaseCommand):
                 title = self.extractTag(movie, b'\xa9nam')
                 year = self.extractTag(movie, b'\xa9day')
                 genre = self.extractTag(movie, b'\xa9gen')
-                cover_data = movie[b'covr'][0]
+                cover_data = movie['covr'][0]
                 cover = os.path.join(folderpath, 'cover.jpg')
                 desc = self.extractTag(movie, b'desc')
                 source = os.path.join(folderpath, filename)
@@ -53,8 +55,8 @@ class Command(BaseCommand):
 
     def writeMeta(self, root, title, year, genre, source, name, desc):
         text = open(os.path.join(root, name + '.txt'), 'w', encoding='utf-8')
-        text.write(u'TITLE: ' + title + '\n')
-        text.write(u'YEAR: ' + year + '\n')
+        text.write('TITLE: ' + title + '\n')
+        text.write('YEAR: ' + year + '\n')
         text.write('GENRE: ' + genre + '\n')
         text.write('SOURCE: ' + source + '\n')
         text.write('COVER: cover.jpg' + '\n')

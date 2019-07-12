@@ -7,7 +7,7 @@ from mutagen.mp4 import MP4
 
 
 class Command(BaseCommand):
-    help = "re-scans the movie db"
+    help = "scans the movie db"
 
     def handle(self, *args, **options):
         Movie.objects.all().delete()

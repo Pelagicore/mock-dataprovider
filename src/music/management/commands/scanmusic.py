@@ -63,13 +63,9 @@ class Command(BaseCommand):
                     elif apic.mime == 'image/png':
                         coverName = 'cover.png'
                     else:
-                        print('unknown cover mime type: ' + mime)
-                # else:
-                #     import pdb;
-                #
-                #     pdb.set_trace()
-                #     print('!!! NO COVER')
-
+                        print('unknown cover mime type: ' + mime)            
+                else:
+                    print('!!! NO COVER:', source)
                 cover = os.path.join(folderpath, coverName)
                 album_id = '%s/%s' % (album, artist)
                 if not album_id in albums:

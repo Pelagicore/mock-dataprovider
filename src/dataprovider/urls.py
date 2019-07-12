@@ -2,6 +2,8 @@ from django.urls import path, include, re_path
 from django.conf import settings
 from django.contrib import admin
 from django.contrib.staticfiles.urls import staticfiles_urlpatterns
+from graphene_django.views import GraphQLView
+
 import contacts
 
 from movies.views import MovieViewSet
@@ -36,6 +38,7 @@ urlpatterns = [
         'document_root': settings.STATIC_ROOT, 
         'show_indexes': True
     }),
+    path("graphql", GraphQLView.as_view(graphiql=True)),
 ]
 
 
